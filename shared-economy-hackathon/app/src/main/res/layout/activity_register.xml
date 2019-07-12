@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/input_house_img"
+                android:background="@drawable/search_input_img"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <EditText
+                android:id="@+id/house_title"
+                android:hint="제목을 입력해주세요."
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/info"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_box"
+                android:layout_width="350dp"
+                android:layout_height="130dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/addr_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <EditText
+                        android:hint="주소를 입력하세요"
+                        android:id="@+id/input_home_addr"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/price_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <EditText
+                        android:hint="원하는 가격을 입력하세요"
+                        android:id="@+id/input_home_price"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/sex_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:hint="선호하시는 성별을 입력하세요."
+                        android:id="@+id/input_home_sex"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/caution"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_box"
+                android:layout_width="350dp"
+                android:layout_height="90dp">
+
+                <EditText
+                android:hint="1. 주의사항을 입력하세요."
+                android:id="@+id/input_caution"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+                <EditText
+                    android:hint="2. 주의사항을 입력하세요."
+                    android:id="@+id/input_caution2"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/provide"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/gray_box"
+                android:layout_width="350dp"
+                android:layout_height="90dp">
+
+                <EditText
+                        android:hint="1. 제공사항을 입력하세요."
+                        android:id="@+id/input_provide"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp" />
+
+                <EditText
+                    android:hint="2. 제공사항을 입력하세요."
+                    android:id="@+id/input_provide2"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp" />
+                </LinearLayout>
+
+            <Button
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/register_btn1"
+                android:background="@drawable/register"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
